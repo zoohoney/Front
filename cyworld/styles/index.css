@@ -1,8 +1,6 @@
-/* 초기셋팅 무조건 해야함 보더박스 핵심  */
 * {
   margin: 0px;
   box-sizing: border-box;
-  /* 컬러, 폰트 등등 미리 지정 가능  */
 }
 
 .background {
@@ -11,7 +9,6 @@
   height: 600px;
   padding-top: 20px;
   padding-left: 20px;
-  /* padding: 20 0 0 20 */
 }
 
 .outerbox {
@@ -31,11 +28,6 @@
   height: 472px;
 }
 
-.wrapper__right {
-  width: 524px;
-  height: 472px;
-}
-
 .wrapper__left__header {
   width: 100%;
   height: 30px;
@@ -43,28 +35,6 @@
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-}
-
-.wrapper__left__body {
-  width: 100%;
-  height: 442px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid gray;
-  border-radius: 15px;
-  padding: 20 30 30 30;
-  background-color: white;
-}
-
-.wrapper__right__header {
-  width: 524px;
-  height: 30px;
-}
-
-.wrapper__right__body {
-  width: 524px;
-  height: 442px;
 }
 
 .today {
@@ -80,10 +50,24 @@
   font-size: 11px;
 }
 
+.wrapper__left__body {
+  width: 100%;
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+}
+
 .left__body__header {
-  width: 148px;
-  height: 133px;
-  background-color: #c4c4c4;
+  width: 100%;
+  height: 229px;
 }
 
 .left__body__header__Grey {
@@ -98,7 +82,7 @@
   margin-bottom: 12px;
 }
 
-.wrapper_profle {
+.wrapper__profle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,7 +94,62 @@
   font-size: 9px;
 }
 
+.footer {
+  width: 100%;
+  height: 41px;
+}
+
+.wrapper__feel {
+  width: 141px;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.feel__text {
+  font-size: 11px;
+}
+
+.feel__select {
+  width: 141px;
+}
+
+.wrapper__right {
+  width: 524px;
+  height: 472px;
+}
+
+.wrapper__right__header {
+  width: 524px;
+  height: 30px;
+  color: #55b2d4;
+  size: 16px;
+  margin-left: 20px;
+}
+
+.wrapper__right__body {
+  width: 524px;
+  height: 440px;
+  margin-left: 6px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.sa {
+  width: 78px;
+  height: 18px;
+  color: black;
+  margin-left: 210px;
+  font-size: 13px;
+}
+
 .icon {
-  color: red;
-  font-size: 30px;
+  color: #ff6400;
+  width: 4px;
+  height: 6px;
 }
