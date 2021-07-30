@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let Auth = String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+        function aaa (){
+            let Auth = String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+        document.getElementByID("hello").innerText = Auth
+        }
+    </script>
+    <title>실습</title>
+</head>
+<body>
+    <div id="hello">000000</div>
+    <button onclick="aaa()">인증번호 전송</button>
+</body>
+</html>

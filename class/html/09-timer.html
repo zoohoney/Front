@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function timer(){
+            let Auth = String(Math.floor(Math.random()*1000000)).padStart(6,"0")
+            document.getElementByID("auth").innerText = Auth
+            let timer = 180;
+            setInterval(function(){
+                if (timer> -1){
+                    let min = Math.floor(timer / 60)
+                    let sec = String(timer % 60).padStart(2,"0")
+                    timer = timer -1
+                    document.getElementById("min").innerText = min
+                    document.getElementById("sec").innerText = sec
+                }
+            }, 1000)
+        }
+    </script>
+    <title>timer</title>
+</head>
+<body>
+    <div id="auth">000000</div>
+    <button onclick="timer()">인증번호 전송</button>
+    <span id="min">3</span>
+    <span>:</span>
+    <span id="sec">00</span>
+
+</body>
+</html>
